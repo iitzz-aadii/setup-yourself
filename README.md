@@ -173,6 +173,12 @@ irm https://coporton.com/ias | iex
 ### Spotify (Ad-Free with SpotX)
 **What is it?** Spotify is the world's most popular music streaming app with millions of songs. **SpotX** is a modification that removes all ads from the free version, giving you an ad-free listening experience without paying for Premium.
 
+| Description | Link |
+|-------------|------|
+| 📥 **Official Download** | [Download Spotify](https://www.spotify.com/download/windows/) |
+
+#### SpotX Ad-Free Script
+Run this after installing Spotify to remove ads:
 ```powershell
 iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -new_theme"
 ```
@@ -285,6 +291,7 @@ irm https://naeembolchhi.github.io/WinRAR-Activator/WRA.ps1 | iex
 | [Chris Titus Tech](https://github.com/ChrisTitusTech/winutil) | Windows Utility |
 | [SpotX](https://github.com/SpotX-Official/SpotX) | Spotify ad-free mod |
 | [IDM Activation Script](https://github.com/lstprjct/IDM-Activation-Script) | IDM activation |
+| [WinRAR Activator](https://github.com/naeembolchhi/WinRAR-Activator) | WinRAR activation |
 
 ---
 
