@@ -146,6 +146,15 @@ irm https://coporton.com/ias | iex
 
 ---
 
+### Microsoft PowerToys
+**What is it?** A set of free utilities by Microsoft that supercharge your Windows experience. Includes tools like **FancyZones** (create custom window layouts), **PowerRename** (bulk rename files), **Color Picker** (grab any color from screen), **Image Resizer** (right-click to resize images), and many more productivity boosters.
+
+| Description | Link |
+|-------------|------|
+| 📥 **Official Download** | [Download PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) |
+
+---
+
 ## 💻 Development Tools
 
 ### Visual Studio Code
@@ -224,6 +233,18 @@ irm https://naeembolchhi.github.io/WinRAR-Activator/WRA.ps1 | iex
 | Description | Link |
 |-------------|------|
 | 📥 **Official Download** | [Download NVIDIA App](https://www.nvidia.com/en-in/software/nvidia-app/) |
+
+---
+
+### MSI Afterburner
+**What is it?** Ever seen YouTubers and streamers showing live stats like **FPS, GPU temperature, CPU usage, and RAM usage** on their screen while gaming? That's MSI Afterburner! It's a free tool that displays real-time system performance stats as an overlay on your screen. Also great for overclocking your graphics card to squeeze out extra performance.
+
+> [!NOTE]
+> **Recommended for users who want to monitor their PC's performance** — especially useful to check if your new device is running properly or if you're experiencing issues.
+
+| Description | Link |
+|-------------|------|
+| 📥 **Official Download** | [Download MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards) |
 
 ---
 
