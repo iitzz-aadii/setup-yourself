@@ -260,9 +260,6 @@ irm https://naeembolchhi.github.io/WinRAR-Activator/WRA.ps1 | iex
 2. Right-click in the PowerShell window to paste
 3. Press **Enter** to execute
 
-> [!WARNING]
-> Always run scripts from trusted sources. Review the script before execution if unsure.
-
 ---
 
 ## ❓ Troubleshooting
