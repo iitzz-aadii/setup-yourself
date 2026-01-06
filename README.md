@@ -2,6 +2,8 @@
 
 A curated collection of essential apps, tools, and activation scripts to quickly set up a fresh Windows machine.
 
+> ✅ **Every tool and script listed here has been personally tested and verified by me.** I use these on my own systems, and I've made sure they work safely and reliably. This is the exact setup I follow whenever I configure a new Windows machine!
+
 ---
 
 ## 📋 Table of Contents
