@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://iitzz-aadii.github.io/Windows-Setup/sitemap.xml

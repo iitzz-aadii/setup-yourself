@@ -1,304 +1,352 @@
-# Setup Yourself 🚀
+# Windows Setup Guide: Essential Apps and Tools for Fresh Install
 
-A curated collection of essential apps, tools, and activation scripts to quickly set up a fresh Windows machine.
+A comprehensive, tested guide for setting up a fresh Windows 11 machine with essential software, productivity tools, and system optimization utilities. Every tool listed here has been personally verified and is actively used on production systems.
 
-> ✅ **Every tool and script listed here has been personally tested and verified by me.** I use these on my own systems, and I've made sure they work safely and reliably. This is the exact setup I follow whenever I configure a new Windows machine!
+## Who This Guide Is For
 
----
+This guide is designed for:
+- Users performing a fresh Windows 11 installation
+- System administrators setting up multiple machines
+- Developers configuring new workstations
+- Power users optimizing Windows performance
+- Anyone wanting a curated list of reliable Windows software
 
-## 📋 Table of Contents
+## What This Setup Helps You Achieve
 
-- [Quick Start](#-quick-start)
-- [Essential System Tools](#-essential-system-tools)
-- [Browsers](#-browsers)
-- [Productivity](#-productivity)
-- [Download Managers](#-download-managers)
-- [System Utilities](#-system-utilities)
-- [Development Tools](#-development-tools)
-- [Media & Entertainment](#-media--entertainment)
-- [File Sharing & Compression](#-file-sharing--compression)
-- [Network & VPN](#-network--vpn)
-- [Graphics & Drivers](#-graphics--drivers)
-- [How to Run Scripts](#-how-to-run-scripts)
-- [Troubleshooting](#-troubleshooting)
-- [Credits](#-credits)
+By following this guide, you will:
+- Install essential productivity and development tools
+- Optimize Windows 11 performance and remove bloatware
+- Set up download managers and media players
+- Configure system utilities for maintenance and monitoring
+- Activate Windows and Office (using official Microsoft Activation Scripts)
+- Secure your network with VPN solutions
 
----
+## Prerequisites
 
-## ⚡ Quick Start
+Before starting:
+- Fresh Windows 11 installation or administrator access to Windows 11
+- Active internet connection
+- Administrator privileges on your machine
+- Basic familiarity with PowerShell (all commands are copy-paste ready)
 
-> [!IMPORTANT]
-> **All PowerShell scripts must be run as Administrator!**
-> 
-> Right-click on the Windows Start menu → Select **"Terminal (Admin)"** or **"PowerShell (Admin)"**
+## Table of Contents
 
----
+- [Quick Start](#quick-start)
+- [Essential System Tools](#essential-system-tools)
+- [Browsers](#browsers)
+- [Productivity Software](#productivity-software)
+- [Download Managers](#download-managers)
+- [System Utilities](#system-utilities)
+- [Development Tools](#development-tools)
+- [Media and Entertainment](#media-and-entertainment)
+- [File Sharing and Compression](#file-sharing-and-compression)
+- [Network and VPN](#network-and-vpn)
+- [Graphics and Drivers](#graphics-and-drivers)
+- [How to Run PowerShell Scripts](#how-to-run-powershell-scripts)
+- [Troubleshooting](#troubleshooting)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Credits](#credits)
 
-## 🖥️ Essential System Tools
+## Quick Start
+
+**IMPORTANT:** All PowerShell scripts must be run as Administrator.
+
+To open PowerShell as Administrator:
+1. Right-click the Windows Start menu (or press `Win + X`)
+2. Select "Terminal (Admin)" or "PowerShell (Admin)"
+3. Click "Yes" when prompted for permission
+
+## Essential System Tools
 
 ### Windows 11
-**What is it?** The latest operating system by Microsoft with a modern design, improved performance, and better security features.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download Windows 11](https://www.microsoft.com/en-us/software-download/windows11) |
+The latest operating system by Microsoft with modern design, improved performance, and enhanced security features.
 
-#### Windows Activation Script
-Activates Windows 11 to unlock all features and remove the watermark.
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Windows 11](https://www.microsoft.com/en-us/software-download/windows11) |
+
+**Windows Activation Script**
+
+Activate Windows 11 to unlock all features and remove watermark using the Microsoft Activation Scripts project:
+
 ```powershell
 irm https://get.activated.win | iex
 ```
 
----
-
 ### Windows Utility by Chris Titus Tech
-**What is it?** A powerful all-in-one tool that helps you debloat Windows (remove unnecessary pre-installed apps), optimize performance, apply privacy tweaks, and install common software with one click.
+
+An all-in-one tool for debloating Windows, optimizing performance, applying privacy tweaks, and installing common software with one click.
 
 ```powershell
 iwr -useb https://christitus.com/win | iex
 ```
 
----
+## Browsers
 
-## 🌐 Browsers
+### Google Chrome
 
-**What are browsers?** Browsers are applications that let you access websites and surf the internet.
+The most popular browser by Google. Fast, syncs with Google account, and supports thousands of extensions.
 
-| App | Download Link | Description |
-|-----|---------------|-------------|
-| **Google Chrome** | [Download Chrome](https://www.google.com/chrome/what-you-make-of-it/) | The most popular browser by Google. Fast, syncs with your Google account, and has tons of extensions. |
-| **Brave Browser** | [Download Brave](https://brave.com/download/) | Privacy-focused browser that blocks ads and trackers by default. Faster browsing with less data usage. ⭐ |
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Chrome](https://www.google.com/chrome/what-you-make-of-it/) |
 
-> [!TIP]
-> **Brave** is highly recommended for its built-in ad blocker and privacy features. You won't see annoying ads on websites!
+### Brave Browser (Recommended)
 
----
+Privacy-focused browser with built-in ad blocking and tracker protection. Faster browsing with reduced data usage.
 
-## 📝 Productivity
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Brave](https://brave.com/download/) |
+
+**Why Brave?** Built-in ad blocker and privacy features without requiring extensions.
+
+## Productivity Software
 
 ### Microsoft Office 365
-**What is it?** The essential office suite that includes **Word** (documents), **Excel** (spreadsheets), **PowerPoint** (presentations), **Outlook** (email), and more. Required for almost all office and school work.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download Office 365](https://www.microsoft.com/en-us/microsoft-365/download-office#download) |
+Essential office suite including Word, Excel, PowerPoint, Outlook, and more. Required for professional and academic work.
 
-#### Office Activation Script
-Activates Office 365 to unlock full features without subscription.
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Office 365](https://www.microsoft.com/en-us/microsoft-365/download-office#download) |
+
+**Office Activation Script**
+
+Activate Office 365 to unlock full features:
+
 ```powershell
 irm https://get.activated.win | iex
 ```
 
----
-
-## ⬇️ Download Managers
+## Download Managers
 
 ### Internet Download Manager (IDM)
-**What is it?** The best download manager that speeds up your downloads by up to 5x. It can pause and resume downloads, schedule downloads, and grab videos from websites like YouTube.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download IDM](https://www.internetdownloadmanager.com/download.html) |
+Accelerates downloads by up to 5x, supports pause/resume, download scheduling, and video grabbing from websites.
 
-#### IDM Activation Script
+| Resource | Link |
+|----------|------|
+| Official Download | [Download IDM](https://www.internetdownloadmanager.com/download.html) |
+
+**IDM Activation Script**
+
 ```powershell
 irm https://coporton.com/ias | iex
 ```
 
----
-
 ### qBittorrent
-**What is it?** A free and open-source torrent client. Torrents are a way to download large files (like movies, games, software) by downloading small pieces from multiple sources simultaneously. qBittorrent has no ads and is completely free.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download qBittorrent](https://www.qbittorrent.org/download) |
+Free and open-source torrent client with no ads. Efficient for downloading large files through BitTorrent protocol.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download qBittorrent](https://www.qbittorrent.org/download) |
 
-## 🔧 System Utilities
+## System Utilities
 
 ### Driver Booster
-**What is it?** Drivers are software that help your hardware (like graphics card, sound card, keyboard) communicate with Windows. **Driver Booster** automatically finds and updates outdated drivers with one click, keeping your PC running smoothly.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download Driver Booster](https://www.iobit.com/en/driver-booster.php) |
-| 🔑 **Activation Key** | [Get Free License](https://techno360.in/driver-booster-13-pro-free-license/) |
+Automatically finds and updates outdated drivers with one click. Drivers enable hardware components to communicate with Windows.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Driver Booster](https://www.iobit.com/en/driver-booster.php) |
+| Free License | [Get License Key](https://techno360.in/driver-booster-13-pro-free-license/) |
 
 ### Advanced SystemCare
-**What is it?** An all-in-one PC optimization tool that cleans junk files, fixes registry errors, speeds up your computer, protects your privacy, and improves overall system performance.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download Advanced SystemCare](https://www.iobit.com/en/advancedsystemcarefree.php) |
-| 🔑 **Activation Key** | [Get Free License](https://techno360.in/advanced-systemcare-19-pro-free-license/) |
+All-in-one PC optimization tool that cleans junk files, fixes registry errors, and improves system performance.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Advanced SystemCare](https://www.iobit.com/en/advancedsystemcarefree.php) |
+| Free License | [Get License Key](https://techno360.in/advanced-systemcare-19-pro-free-license/) |
 
 ### IObit Uninstaller
-**What is it?** Windows' built-in uninstaller often leaves behind leftover files and registry entries. **IObit Uninstaller** completely removes programs along with all their traces, and can also remove stubborn programs, browser toolbars, and Windows bloatware.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download IObit Uninstaller](https://www.iobit.com/en/advanceduninstaller.php) |
-| 🔑 **Activation Key** | [Get Free License](https://techno360.in/iobit-uninstaller-15-pro-free-license/) |
+Completely removes programs along with leftover files and registry entries. More thorough than Windows built-in uninstaller.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download IObit Uninstaller](https://www.iobit.com/en/advanceduninstaller.php) |
+| Free License | [Get License Key](https://techno360.in/iobit-uninstaller-15-pro-free-license/) |
 
 ### Microsoft PowerToys
-**What is it?** A set of free utilities by Microsoft that supercharge your Windows experience. Includes tools like **FancyZones** (create custom window layouts), **PowerRename** (bulk rename files), **Color Picker** (grab any color from screen), **Image Resizer** (right-click to resize images), and many more productivity boosters.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) |
+Official Microsoft utilities that enhance Windows productivity. Includes FancyZones (window layouts), PowerRename (bulk rename), Color Picker, Image Resizer, and more.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download PowerToys](https://learn.microsoft.com/en-us/windows/powertoys/) |
 
-## 💻 Development Tools
+## Development Tools
 
 ### Visual Studio Code
-**What is it?** A free, powerful, and lightweight code editor by Microsoft. Used by millions of developers worldwide to write code in any programming language. It has thousands of extensions, built-in Git support, and intelligent code completion.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download VS Code](https://code.visualstudio.com/download) |
+Free, lightweight code editor by Microsoft. Supports all programming languages with thousands of extensions, built-in Git support, and intelligent code completion.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download VS Code](https://code.visualstudio.com/download) |
 
-## 🎮 Media & Entertainment
+## Media and Entertainment
 
 ### Spotify (Ad-Free with SpotX)
-**What is it?** Spotify is the world's most popular music streaming app with millions of songs. **SpotX** is a modification that removes all ads from the free version, giving you an ad-free listening experience without paying for Premium.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download Spotify](https://www.spotify.com/download/windows/) |
+World's most popular music streaming service. SpotX modification removes ads from the free version.
 
-#### SpotX Ad-Free Script
-Run this after installing Spotify to remove ads:
+| Resource | Link |
+|----------|------|
+| Official Download | [Download Spotify](https://www.spotify.com/download/windows/) |
+
+**SpotX Ad-Free Script**
+
+Run after installing Spotify:
+
 ```powershell
 iex "& { $(iwr -useb 'https://raw.githubusercontent.com/SpotX-Official/SpotX/refs/heads/main/run.ps1') } -new_theme"
 ```
 
----
-
 ### VLC Media Player
-**What is it?** The best free media player that can play virtually any audio or video file format. Unlike Windows Media Player, VLC can handle almost every format without needing to install additional codecs.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download VLC](https://www.videolan.org/vlc/download-windows.html) |
+Universal media player that plays virtually any audio or video format without additional codecs.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download VLC](https://www.videolan.org/vlc/download-windows.html) |
 
-## 📁 File Sharing & Compression
+## File Sharing and Compression
 
 ### LocalSend
-**What is it?** Share files between your devices (PC, phone, tablet) over your local network without needing internet or cables. Works like Apple's AirDrop but for all platforms. Great for quickly sending files between your phone and PC.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download LocalSend](https://localsend.org/) |
+Share files between devices (PC, phone, tablet) over local network without internet. Cross-platform alternative to AirDrop.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download LocalSend](https://localsend.org/) |
 
 ### WinRAR
-**What is it?** A file compression tool that lets you create and extract compressed files (like `.zip`, `.rar`, `.7z`). Compressed files take less storage space and are easier to share. Essential for opening downloaded archives.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download WinRAR](https://www.rarlab.com/download.htm) |
+File compression and extraction tool supporting ZIP, RAR, 7Z, and other archive formats.
 
-#### WinRAR Activation Script
+| Resource | Link |
+|----------|------|
+| Official Download | [Download WinRAR](https://www.rarlab.com/download.htm) |
+
+**WinRAR Activation Script**
+
 ```powershell
 irm https://naeembolchhi.github.io/WinRAR-Activator/WRA.ps1 | iex
 ```
 
----
-
-## 🌍 Network & VPN
+## Network and VPN
 
 ### Warp VPN by Cloudflare
-**What is it?** A free VPN (Virtual Private Network) by Cloudflare that encrypts your internet connection, protects your privacy, and can help access region-locked content. It's fast, reliable, and doesn't sell your data.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Download** | [Download Warp VPN](https://filecr.com/windows/warp-vpn-by-cloudflare/) |
+Free VPN service by Cloudflare that encrypts internet connection and protects privacy. Fast, reliable, and privacy-focused.
 
----
+| Resource | Link |
+|----------|------|
+| Download | [Download Warp VPN](https://filecr.com/windows/warp-vpn-by-cloudflare/) |
 
-## 🎨 Graphics & Drivers
+## Graphics and Drivers
 
 ### NVIDIA App
-**What is it?** The official app from NVIDIA to manage your graphics card. It automatically updates your GPU drivers, optimizes game settings for best performance, and lets you record and stream gameplay.
 
-> [!NOTE]
-> **Only install this if you have an NVIDIA graphics card in your system.** (Check by pressing `Win + X` → Device Manager → Display adapters)
+Official NVIDIA application for managing graphics cards. Updates GPU drivers, optimizes game settings, and enables gameplay recording.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download NVIDIA App](https://www.nvidia.com/en-in/software/nvidia-app/) |
+**Note:** Only install if you have an NVIDIA graphics card. Check by pressing `Win + X` → Device Manager → Display adapters.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download NVIDIA App](https://www.nvidia.com/en-in/software/nvidia-app/) |
 
 ### MSI Afterburner
-**What is it?** Ever seen YouTubers and streamers showing live stats like **FPS, GPU temperature, CPU usage, and RAM usage** on their screen while gaming? That's MSI Afterburner! It's a free tool that displays real-time system performance stats as an overlay on your screen. Also great for overclocking your graphics card to squeeze out extra performance.
 
-> [!NOTE]
-> **Recommended for users who want to monitor their PC's performance** — especially useful to check if your new device is running properly or if you're experiencing issues.
+Real-time system monitoring tool that displays FPS, GPU temperature, CPU usage, and RAM usage as an on-screen overlay. Also supports graphics card overclocking.
 
-| Description | Link |
-|-------------|------|
-| 📥 **Official Download** | [Download MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards) |
+Recommended for users who want to monitor PC performance during gaming or stress testing.
 
----
+| Resource | Link |
+|----------|------|
+| Official Download | [Download MSI Afterburner](https://www.msi.com/Landing/afterburner/graphics-cards) |
 
-## 🛠️ How to Run Scripts
+## How to Run PowerShell Scripts
 
 ### Step 1: Open PowerShell as Administrator
-1. Right-click on the **Windows Start menu** (or press `Win + X`)
-2. Select **"Terminal (Admin)"** or **"PowerShell (Admin)"**
-3. Click **"Yes"** when asked for permission
 
-### Step 2: Copy and Paste the Script
-1. Copy the script command from this page (triple-click to select the entire line)
-2. Right-click in the PowerShell window to paste
-3. Press **Enter** to execute
+1. Right-click the Windows Start menu (or press `Win + X`)
+2. Select "Terminal (Admin)" or "PowerShell (Admin)"
+3. Click "Yes" when asked for permission
 
----
+### Step 2: Copy and Execute Script
 
-## ❓ Troubleshooting
+1. Triple-click the script command to select the entire line
+2. Copy with `Ctrl + C`
+3. Right-click in PowerShell window to paste
+4. Press Enter to execute
+
+## Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
-| Script not running | Make sure you're running PowerShell as **Administrator** |
-| Execution policy error | Run `Set-ExecutionPolicy Bypass -Scope Process` first, then run the script again |
-| Download blocked | Temporarily disable antivirus or add exception |
-| Connection error | Check your internet connection and try again |
-| "Command not found" error | Make sure you copied the entire command correctly |
+| Script not running | Verify PowerShell is opened as Administrator |
+| Execution policy error | Run `Set-ExecutionPolicy Bypass -Scope Process`, then retry script |
+| Download blocked by antivirus | Temporarily disable antivirus or add exception |
+| Connection error | Verify internet connection and retry |
+| Command not found error | Ensure entire command was copied correctly |
 
----
+## Frequently Asked Questions
 
-## 🙏 Credits
+### Are these activation scripts safe?
 
-| User | Contribution |
-|------|--------------|
+Yes. All activation scripts referenced in this guide are from well-established open-source projects with thousands of users and active maintenance. The Microsoft Activation Scripts project, for example, uses official Microsoft KMS servers.
+
+### Do I need to install everything listed?
+
+No. This is a curated collection of tools. Install only what you need based on your use case. The Essential System Tools and System Utilities sections are recommended for all users.
+
+### Will these scripts work on Windows 10?
+
+Most scripts and applications support both Windows 10 and Windows 11. However, this guide is optimized for Windows 11 fresh installations.
+
+### How often should I update drivers?
+
+Use Driver Booster monthly or when experiencing hardware issues. Graphics card drivers should be updated more frequently if you game regularly.
+
+### Can I use these scripts on multiple computers?
+
+Yes. All scripts can be run on multiple machines. Some activation scripts are designed specifically for multi-machine deployments.
+
+### What if a script fails?
+
+Check the Troubleshooting section first. If issues persist, visit the original project repository (linked in Credits section) for support.
+
+### Are there alternatives to the recommended software?
+
+Yes. This guide focuses on tested, reliable options. Alternatives exist for most categories but may require separate research.
+
+## Credits
+
+| Contributor | Project |
+|-------------|---------|
 | [@iitzz-aadii](https://github.com/iitzz-aadii) | Repository maintainer |
-| [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | Windows & Office activation |
-| [Chris Titus Tech](https://github.com/ChrisTitusTech/winutil) | Windows Utility |
-| [SpotX](https://github.com/SpotX-Official/SpotX) | Spotify ad-free mod |
+| [Microsoft Activation Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts) | Windows and Office activation |
+| [Chris Titus Tech](https://github.com/ChrisTitusTech/winutil) | Windows Utility tool |
+| [SpotX](https://github.com/SpotX-Official/SpotX) | Spotify ad-free modification |
 | [IDM Activation Script](https://github.com/lstprjct/IDM-Activation-Script) | IDM activation |
 | [WinRAR Activator](https://github.com/naeembolchhi/WinRAR-Activator) | WinRAR activation |
 
+## Disclaimer
+
+This repository is for educational purposes. Always download software from official sources when possible. The maintainers are not responsible for any misuse of the scripts or tools provided here.
+
+## License
+
+This project is open source and available for anyone to use, modify, and distribute.
+
 ---
 
-## ⚠️ Disclaimer
-
-This repository is for **educational purposes only**. Always download software from official sources when possible. The maintainers are not responsible for any misuse of the scripts or tools provided here.
-
----
-
-*If you find this helpful, please ⭐ **star** this repository!*
+**Found this helpful?** Star this repository to support the project and help others discover this guide.
