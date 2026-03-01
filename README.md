@@ -39,7 +39,6 @@ Before starting:
 - [System Utilities](#system-utilities)
 - [Development Tools](#development-tools)
 - [Media and Entertainment](#media-and-entertainment)
-- [File Sharing and Compression](#file-sharing-and-compression)
 - [Network and VPN](#network-and-vpn)
 - [Graphics and Drivers](#graphics-and-drivers)
 - [How to Run PowerShell Scripts](#how-to-run-powershell-scripts)
@@ -216,16 +215,6 @@ Universal media player that plays virtually any audio or video format without ad
 | Resource | Link |
 |----------|------|
 | Official Download | [Download VLC](https://www.videolan.org/vlc/download-windows.html) |
-
-## File Sharing and Compression
-
-### LocalSend
-
-Share files between devices (PC, phone, tablet) over local network without internet. Cross-platform alternative to AirDrop.
-
-| Resource | Link |
-|----------|------|
-| Official Download | [Download LocalSend](https://localsend.org/) |
 
 ### WinRAR
 
